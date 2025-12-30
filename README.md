@@ -102,9 +102,19 @@ This project includes a static website hosted on GitHub Pages that showcases the
 ### GitHub Pages Deployment
 The website is automatically deployed to GitHub Pages using GitHub Actions:
 
-1. Push changes to the `main` branch
-2. GitHub Actions will build and deploy the site from the `docs/` folder
-3. Access your site at: `https://yourusername.github.io/smart-agriculture`
+1. Create a new repository on GitHub
+2. Push this code to your repository:
+   ```bash
+   git remote add origin https://github.com/yourusername/smart-agriculture.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. Go to repository Settings > Pages
+4. Under Source, select "Deploy from a branch"
+5. Select branch `main` and folder `/docs`
+6. Save - your site will be available at `https://yourusername.github.io/smart-agriculture`
+
+The GitHub Actions workflow will also deploy automatically on each push to main.
 
 ### Running the Full Application
 1. Install dependencies: `pip install -r requirements.txt`
