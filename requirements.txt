@@ -1,0 +1,14 @@
+---
+
+# 📦 requirements.txt
+
+```txt
+fastapi
+uvicorn
+paho-mqtt
+pandas
+numpy
+scikit-learn
+joblib
+streamlit
+sqlite-utils
