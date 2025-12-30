@@ -1,6 +1,6 @@
 from flask import Flask
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # ---------------------------------
 # PAGE 1 : HOME PAGE
@@ -137,5 +137,5 @@ def info():
 # ---------------------------------
 # MAIN
 # ---------------------------------
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(port=5000, debug=True)
